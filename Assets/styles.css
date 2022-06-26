@@ -14,10 +14,6 @@ h1 {
     color: white;
 }
 
-ma h3 {
-    width: 80% !important;
-}
-
 ul {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -42,7 +38,7 @@ ul li {
     align-items: center;
 }
 
-.mainAudiovisuales .secciones h4 a {
+.mainAudio visuales .secciones h4 a {
     text-decoration: none;
     font-size: 40px;
     color: rgb(43, 122, 226);

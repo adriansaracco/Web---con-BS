@@ -6,77 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../Assets/styles.css">
 </head>
 
-<body>
-    <div class="encabezado">
-        <header>
-            <div class="logo">
-                <img src="../Assets/img/LogoNico.jpeg" alt="">
+<body class=" ">
+    <header class="row ms-auto d-flex bg-black">
+        <div class="col-4 md-5 bg-black">
+            <img class="img-fluid" src="/Assets/img/LogoNico.jpeg" alt="" width="100px" height="100px">
+        </div>
+        <div class="col-8 md-7 lg- titilo bg-black titulo ">
+            <h1>Nicolás E Fiorotto</h1>
+        </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light mb-5">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Audiovisuales.html">Audiovisuales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
             </div>
-            <div>
-                <h1>Nicolás E Fiorotto</h1>
+        </div>
+    </nav>
+
+    <Main class=" coros row justify-content-around align-content-around">
+
+        <h1>COROS</h1>
+
+        <div id="carouselExampleCaptions" class="carousel slide row justify-content-around align-content-around col-12" data-bs-ride="false">
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
-
-            <nav>
-                <ul>
-
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="Audiovisuales.html">Audiovisuales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-            </nav>
-        </header>
-    </div>
-    <H3>Coros</H3>
-    <!-- aquí se insertarán diferentes videos de Youtube -->
-
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-
-    <div class="TrabajosAudiovisuals">
-        <H5></H5>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
+            <div class="carousel-inner justify-content-around align-content-around bg-black">
+                <div class="carousel-item active ">
+                    <iframe class=" col-4  col-lg-8" src="https://www.youtube.com/embed/df2__z8R8dg" title="SEMINARE - Dir. Nicolás Fiorotto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
+                    <div class="carousel-captionclass col-4 col-md-6 col-lg-8 ">
+                        <h5 class=" col-4 col-md-6 col-lg-8">Masa Coral</h5>
+                        <p class=" col-4 col-md-6 col-lg-8">Varios Coros Participantes</p>
+                    </div>
+                </div>
+                <div class="carousel-item  ">
+                    <iframe class=" col-4 col-md-6 col-lg-8" src="https://www.youtube.com/embed/51Odhndt6v8" title="LA MAZA  - VOCAL PARADIGMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="carousel-caption ">
+                        <h5>La Maza</h5>
+                        <p>Vocal Paradigma.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <iframe width="425" height="425" src="https://www.youtube.com/embed/N8yUOySKM-I" title="11 Y 6 - Coral Guadix (Dir. Nicolás Fiorotto)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>11 y 6</h5>
+                        <p>Coral Guadix</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <iframe width="425" height="425" src="https://www.youtube.com/embed/PJnSiq74fUc" title="RECUÉRDAME - Septimia  (Dir. Nicolás Fiorotto)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Recuérdame</h5>
+                        <p>Vocal Septimia</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev col-12" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon col-12" aria-hidden="true"></span>
+            <span class="visually-hidden Col-12">Previous</span>
+            </button>
+            <button class="carousel-control-next col-12" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon col-12" aria-hidden="true"></span>
+            <span class="visually-hidden col-12">Next</span>
+            </button>
+        </div>
+    </Main>
 
 
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
 </body>
 
 </html>

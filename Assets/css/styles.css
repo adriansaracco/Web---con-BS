@@ -8,10 +8,9 @@ header {
   justify-items: center !important;
   align-items: center !important;
 }
-
-h1 {
+header h1 {
   width: 80%;
-  color: white;
+  color: #fff;
 }
 
 ul {
@@ -45,12 +44,20 @@ ul li {
 }
 
 @media (min-width: 576px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .mainAudiovisuales {
     display: flex;
     flex-direction: row;
     justify-items: center;
     justify-content: space-around;
     align-content: space-around;
+    height: 75%;
   }
 
   .mainAudiovisuales .secciones {
@@ -58,6 +65,7 @@ ul li {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    height: 75%;
   }
 
   .mainAudiovisuales .secciones h4 a {
@@ -65,4 +73,9 @@ ul li {
     font-size: 40px;
     color: rgb(43, 122, 226);
   }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }/*# sourceMappingURL=styles.css.map */

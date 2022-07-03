@@ -1,6 +1,13 @@
 @import "reset";
 @import "variables";
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
+    width: 100%;
     justify-items: center !important;
     align-items: center !important;
     h1 {
@@ -25,14 +32,14 @@ ul {
 }
 
 .mainAudiovisuales .secciones {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
-.mainAudio visuales .secciones h4 a {
+.mainAudiovisuales .secciones h4 a {
     text-decoration: none;
     font-size: 40px;
     color: $colorAudiovisuales;
@@ -68,7 +75,12 @@ ul {
 }
 
 .footer {
+    margin-top: auto;
     display: flex;
     justify-content: center;
     background-color: black;
+    h6 {
+        padding: 5px;
+        color: white;
+    }
 }

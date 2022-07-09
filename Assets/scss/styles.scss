@@ -1,27 +1,33 @@
                                             @import "reset";
                                             @import "variables";
-                                            body {
+                                            @mixin flex-column {
                                                 display: flex;
                                                 flex-direction: column;
+                                            }
+                                            
+                                            body {
+                                                @include flex-column();
                                                 min-height: 100vh;
                                                 background-image: linear-gradient(to top, rgb(182, 173, 173), rgb(240, 240, 217));
                                             }
                                             
+                                            $opacidades:( inicio:0, medio-bajo:0.25, medio:0.5, medio-alto: 0.75, alto:1);
                                             @keyframes titulo {
                                                 0% {
-                                                    opacity: 0;
+                                                    opacity: map-get($opacidades, inicio);
                                                 }
                                                 25% {
-                                                    opacity: 0.25;
+                                                    opacity: map-get($opacidades, medio-bajo);
                                                 }
                                                 50% {
-                                                    opacity: 0.5;
+                                                    opacity: map-get($opacidades, medio);
                                                 }
                                                 75% {
-                                                    opacity: 0.75;
+                                                    opacity: map-get($opacidades, medio-alto);
+                                                    ;
                                                 }
                                                 100% {
-                                                    opacity: 1;
+                                                    opacity: map-get($opacidades, alto);
                                                 }
                                             }
                                             
@@ -29,7 +35,7 @@
                                                 width: 100%;
                                                 justify-items: center !important;
                                                 align-items: center !important;
-                                                h1 {
+                                                .titulo {
                                                     width: 80%;
                                                     color: $colorBlanco;
                                                     animation-name: titulo;
@@ -46,16 +52,13 @@
                                             }
                                             
                                             .mainAudiovisuales {
-                                                display: flex;
-                                                flex-direction: column;
+                                                @include flex-column();
                                                 flex-wrap: wrap;
                                                 align-items: center;
                                             }
                                             
-                                            .mainAudiovisuales .secciones {
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: center;
+                                            .secciones {
+                                                @extend .mainAudiovisuales;
                                                 width: 80%;
                                                 margin-bottom: 40px;
                                             }
@@ -77,8 +80,7 @@
                                                 justify-content: center;
                                                 background-color: black;
                                                 h6 {
-                                                    padding: 5px;
-                                                    color: white;
+                                                    @extend h1;
                                                 }
                                             }
                                             
@@ -120,8 +122,7 @@
                                                     justify-content: center;
                                                     background-color: black;
                                                     h6 {
-                                                        padding: 5px;
-                                                        color: white;
+                                                        @extend h1;
                                                     }
                                                 }
                                             }
